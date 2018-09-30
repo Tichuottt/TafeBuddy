@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F29B4F1ED6C36A00D0BFD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F29B4D1ED6C36A00D0BFD8 /* LaunchScreen.storyboard */; };
+		18F29B501ED6C36A00D0BFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F29B4E1ED6C36A00D0BFD8 /* Main.storyboard */; };
+		27163E541EDBD97300E605E4 /* CounsellingSessions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27163E531EDBD97300E605E4 /* CounsellingSessions.swift */; };
+		27163E581EDBE33900E605E4 /* ic_counselling.gif in Resources */ = {isa = PBXBuildFile; fileRef = 27163E571EDBE33900E605E4 /* ic_counselling.gif */; };
+		27163E5A1EDC2DB900E605E4 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27163E591EDC2DB900E605E4 /* TimeTable.swift */; };
+		77116EF11E968BA100CB37FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77116EF01E968BA100CB37FD /* AppDelegate.swift */; };
+		77116F061E968BA100CB37FD /* Tafe_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77116F051E968BA100CB37FD /* Tafe_BuddyTests.swift */; };
+		77116F111E968BA100CB37FD /* Tafe_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77116F101E968BA100CB37FD /* Tafe_BuddyUITests.swift */; };
+		77116F241E968BB700CB37FD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77116F1F1E968BB700CB37FD /* SignIn.swift */; };
+		77116F251E968BB700CB37FD /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77116F201E968BB700CB37FD /* MainScreen.swift */; };
+		77116F261E968BB700CB37FD /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77116F211E968BB700CB37FD /* CourseInfo.swift */; };
+		77116F271E968BB700CB37FD /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77116F221E968BB700CB37FD /* Video.swift */; };
+		77116F2D1E968BDE00CB37FD /* tafe.png in Resources */ = {isa = PBXBuildFile; fileRef = 77116F281E968BDE00CB37FD /* tafe.png */; };
+		77116F2E1E968BDE00CB37FD /* gov.png in Resources */ = {isa = PBXBuildFile; fileRef = 77116F291E968BDE00CB37FD /* gov.png */; };
+		77116F2F1E968BDE00CB37FD /* training-winner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77116F2A1E968BDE00CB37FD /* training-winner.jpg */; };
+		77116F301E968BDE00CB37FD /* logo_TAFESA.png in Resources */ = {isa = PBXBuildFile; fileRef = 77116F2B1E968BDE00CB37FD /* logo_TAFESA.png */; };
+		77116F311E968BDE00CB37FD /* South_Aust.png in Resources */ = {isa = PBXBuildFile; fileRef = 77116F2C1E968BDE00CB37FD /* South_Aust.png */; };
+		77116F351E968BE700CB37FD /* Keyboard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 77116F321E968BE700CB37FD /* Keyboard.wav */; };
+		77116F361E968BE700CB37FD /* Pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 77116F331E968BE700CB37FD /* Pop.wav */; };
+		77116F371E968BE700CB37FD /* Wave.wav in Resources */ = {isa = PBXBuildFile; fileRef = 77116F341E968BE700CB37FD /* Wave.wav */; };
+		771AA0911EBB71C600AC54F3 /* QRHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AA0901EBB71C600AC54F3 /* QRHistory.swift */; };
+		7754F7B21E97B8570091B082 /* Campus Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7754F7B11E97B8570091B082 /* Campus Map.swift */; };
+		7754F7B41E97BECE0091B082 /* CampusMapTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7754F7B31E97BECE0091B082 /* CampusMapTableView.swift */; };
+		7754F7B61E97C0590091B082 /* CampusDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7754F7B51E97C0590091B082 /* CampusDetails.swift */; };
+		7783EBE31EC47C85003F94CA /* tafelogored.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBE21EC47C85003F94CA /* tafelogored.png */; };
+		7783EBE71EC47D4E003F94CA /* ic_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBE61EC47D4E003F94CA /* ic_menu.png */; };
+		7783EBEF1EC48770003F94CA /* ic_email_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBEE1EC48770003F94CA /* ic_email_3x.png */; };
+		7783EBF31EC487F9003F94CA /* ic_map_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBF21EC487F9003F94CA /* ic_map_3x.png */; };
+		7783EBF51EC48889003F94CA /* ic_cast_connected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBF41EC48889003F94CA /* ic_cast_connected.png */; };
+		7783EBF71EC48A75003F94CA /* ic_photo_library.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBF61EC48A75003F94CA /* ic_photo_library.png */; };
+		7783EBF91EC48AE6003F94CA /* ic_alarm_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBF81EC48AE6003F94CA /* ic_alarm_add.png */; };
+		7783EBFB1EC48B31003F94CA /* ic_account_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBFA1EC48B31003F94CA /* ic_account_box.png */; };
+		7783EBFD1EC48B50003F94CA /* ic_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBFC1EC48B50003F94CA /* ic_info.png */; };
+		7783EBFF1EC48BC9003F94CA /* ic_build.png in Resources */ = {isa = PBXBuildFile; fileRef = 7783EBFE1EC48BC9003F94CA /* ic_build.png */; };
+		7783EC031EC48CD5003F94CA /* qr-code.ico in Resources */ = {isa = PBXBuildFile; fileRef = 7783EC021EC48CD5003F94CA /* qr-code.ico */; };
+		779D00E41EBB319A00A7E64F /* QRScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D00E31EBB319A00A7E64F /* QRScan.swift */; };
+		77AAB7041E9B4DD100B99AFF /* PasswordReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AAB7031E9B4DD100B99AFF /* PasswordReset.swift */; };
+		77D571FF1E9D1F3F0028DF65 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D571FE1E9D1F3F0028DF65 /* Settings.swift */; };
+		77E5219E1E9D254400D73D47 /* Tafe_Adelaide_Campus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77E5219D1E9D254400D73D47 /* Tafe_Adelaide_Campus.jpg */; };
+		77F293E11E9A3FF200868448 /* Moodle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F293E01E9A3FF200868448 /* Moodle.swift */; };
+		77F9316A1E97888A00FE6CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F931691E97888A00FE6CB4 /* Assets.xcassets */; };
+		805039601EDE651B003D3656 /* onedrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8050395F1EDE651B003D3656 /* onedrive.swift */; };
+		AEE4597A1EE006D4006CC01D /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE459791EE006D4006CC01D /* MyAccount.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77116F021E968BA100CB37FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77116EE51E968BA100CB37FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77116EEC1E968BA100CB37FD;
+			remoteInfo = "Tafe Buddy";
+		};
+		77116F0D1E968BA100CB37FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77116EE51E968BA100CB37FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77116EEC1E968BA100CB37FD;
+			remoteInfo = "Tafe Buddy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18F29B4D1ED6C36A00D0BFD8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18F29B4E1ED6C36A00D0BFD8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		27163E531EDBD97300E605E4 /* CounsellingSessions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounsellingSessions.swift; sourceTree = "<group>"; };
+		27163E571EDBE33900E605E4 /* ic_counselling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ic_counselling.gif; sourceTree = "<group>"; };
+		27163E591EDC2DB900E605E4 /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		77116EED1E968BA100CB37FD /* Tafe Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tafe Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77116EF01E968BA100CB37FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77116EFC1E968BA100CB37FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77116F011E968BA100CB37FD /* Tafe BuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tafe BuddyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77116F051E968BA100CB37FD /* Tafe_BuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tafe_BuddyTests.swift; sourceTree = "<group>"; };
+		77116F071E968BA100CB37FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77116F0C1E968BA100CB37FD /* Tafe BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tafe BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77116F101E968BA100CB37FD /* Tafe_BuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tafe_BuddyUITests.swift; sourceTree = "<group>"; };
+		77116F121E968BA100CB37FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77116F1F1E968BB700CB37FD /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		77116F201E968BB700CB37FD /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		77116F211E968BB700CB37FD /* CourseInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
+		77116F221E968BB700CB37FD /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		77116F281E968BDE00CB37FD /* tafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tafe.png; sourceTree = "<group>"; };
+		77116F291E968BDE00CB37FD /* gov.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gov.png; sourceTree = "<group>"; };
+		77116F2A1E968BDE00CB37FD /* training-winner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "training-winner.jpg"; sourceTree = "<group>"; };
+		77116F2B1E968BDE00CB37FD /* logo_TAFESA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_TAFESA.png; sourceTree = "<group>"; };
+		77116F2C1E968BDE00CB37FD /* South_Aust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = South_Aust.png; sourceTree = "<group>"; };
+		77116F321E968BE700CB37FD /* Keyboard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Keyboard.wav; sourceTree = "<group>"; };
+		77116F331E968BE700CB37FD /* Pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pop.wav; sourceTree = "<group>"; };
+		77116F341E968BE700CB37FD /* Wave.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Wave.wav; sourceTree = "<group>"; };
+		771AA0901EBB71C600AC54F3 /* QRHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRHistory.swift; sourceTree = "<group>"; };
+		7754F7B11E97B8570091B082 /* Campus Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Campus Map.swift"; sourceTree = "<group>"; };
+		7754F7B31E97BECE0091B082 /* CampusMapTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusMapTableView.swift; sourceTree = "<group>"; };
+		7754F7B51E97C0590091B082 /* CampusDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusDetails.swift; sourceTree = "<group>"; };
+		7783EBE21EC47C85003F94CA /* tafelogored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tafelogored.png; sourceTree = "<group>"; };
+		7783EBE61EC47D4E003F94CA /* ic_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_menu.png; sourceTree = "<group>"; };
+		7783EBEE1EC48770003F94CA /* ic_email_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_email_3x.png; sourceTree = "<group>"; };
+		7783EBF21EC487F9003F94CA /* ic_map_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_map_3x.png; sourceTree = "<group>"; };
+		7783EBF41EC48889003F94CA /* ic_cast_connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cast_connected.png; sourceTree = "<group>"; };
+		7783EBF61EC48A75003F94CA /* ic_photo_library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_photo_library.png; sourceTree = "<group>"; };
+		7783EBF81EC48AE6003F94CA /* ic_alarm_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_alarm_add.png; sourceTree = "<group>"; };
+		7783EBFA1EC48B31003F94CA /* ic_account_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_account_box.png; sourceTree = "<group>"; };
+		7783EBFC1EC48B50003F94CA /* ic_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_info.png; sourceTree = "<group>"; };
+		7783EBFE1EC48BC9003F94CA /* ic_build.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_build.png; sourceTree = "<group>"; };
+		7783EC021EC48CD5003F94CA /* qr-code.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = "qr-code.ico"; sourceTree = "<group>"; };
+		779D00E31EBB319A00A7E64F /* QRScan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScan.swift; sourceTree = "<group>"; };
+		77AAB7031E9B4DD100B99AFF /* PasswordReset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordReset.swift; sourceTree = "<group>"; };
+		77D571FE1E9D1F3F0028DF65 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		77E5219D1E9D254400D73D47 /* Tafe_Adelaide_Campus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tafe_Adelaide_Campus.jpg; sourceTree = "<group>"; };
+		77F293E01E9A3FF200868448 /* Moodle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moodle.swift; sourceTree = "<group>"; };
+		77F931691E97888A00FE6CB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8050395F1EDE651B003D3656 /* onedrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = onedrive.swift; sourceTree = "<group>"; };
+		AEE459791EE006D4006CC01D /* MyAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77116EEA1E968BA100CB37FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77116EFE1E968BA100CB37FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77116F091E968BA100CB37FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77116EE41E968BA100CB37FD = {
+			isa = PBXGroup;
+			children = (
+				77116EEF1E968BA100CB37FD /* Tafe Buddy */,
+				77116F391E968BF300CB37FD /* Images */,
+				77116F381E968BEA00CB37FD /* Sound */,
+				77116F041E968BA100CB37FD /* Tafe BuddyTests */,
+				77116F0F1E968BA100CB37FD /* Tafe BuddyUITests */,
+				77116EEE1E968BA100CB37FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77116EEE1E968BA100CB37FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77116EED1E968BA100CB37FD /* Tafe Buddy.app */,
+				77116F011E968BA100CB37FD /* Tafe BuddyTests.xctest */,
+				77116F0C1E968BA100CB37FD /* Tafe BuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77116EEF1E968BA100CB37FD /* Tafe Buddy */ = {
+			isa = PBXGroup;
+			children = (
+				77F9316B1E9788AF00FE6CB4 /* Main View */,
+				77AAB7011E9B4D1C00B99AFF /* Menu View */,
+				77AAB7021E9B4D2600B99AFF /* Button View */,
+				77116EF01E968BA100CB37FD /* AppDelegate.swift */,
+				18F29B4E1ED6C36A00D0BFD8 /* Main.storyboard */,
+				18F29B4D1ED6C36A00D0BFD8 /* LaunchScreen.storyboard */,
+				77116EFC1E968BA100CB37FD /* Info.plist */,
+				77F931691E97888A00FE6CB4 /* Assets.xcassets */,
+			);
+			path = "Tafe Buddy";
+			sourceTree = "<group>";
+		};
+		77116F041E968BA100CB37FD /* Tafe BuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				77116F051E968BA100CB37FD /* Tafe_BuddyTests.swift */,
+				77116F071E968BA100CB37FD /* Info.plist */,
+			);
+			path = "Tafe BuddyTests";
+			sourceTree = "<group>";
+		};
+		77116F0F1E968BA100CB37FD /* Tafe BuddyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77116F101E968BA100CB37FD /* Tafe_BuddyUITests.swift */,
+				77116F121E968BA100CB37FD /* Info.plist */,
+			);
+			path = "Tafe BuddyUITests";
+			sourceTree = "<group>";
+		};
+		77116F381E968BEA00CB37FD /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				77116F321E968BE700CB37FD /* Keyboard.wav */,
+				77116F331E968BE700CB37FD /* Pop.wav */,
+				77116F341E968BE700CB37FD /* Wave.wav */,
+			);
+			name = Sound;
+			path = "Tafe Buddy";
+			sourceTree = "<group>";
+		};
+		77116F391E968BF300CB37FD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7783EC021EC48CD5003F94CA /* qr-code.ico */,
+				7783EBFE1EC48BC9003F94CA /* ic_build.png */,
+				27163E571EDBE33900E605E4 /* ic_counselling.gif */,
+				7783EBFC1EC48B50003F94CA /* ic_info.png */,
+				7783EBFA1EC48B31003F94CA /* ic_account_box.png */,
+				7783EBF81EC48AE6003F94CA /* ic_alarm_add.png */,
+				7783EBF61EC48A75003F94CA /* ic_photo_library.png */,
+				7783EBF41EC48889003F94CA /* ic_cast_connected.png */,
+				7783EBF21EC487F9003F94CA /* ic_map_3x.png */,
+				7783EBEE1EC48770003F94CA /* ic_email_3x.png */,
+				7783EBE61EC47D4E003F94CA /* ic_menu.png */,
+				7783EBE21EC47C85003F94CA /* tafelogored.png */,
+				77E5219D1E9D254400D73D47 /* Tafe_Adelaide_Campus.jpg */,
+				77116F281E968BDE00CB37FD /* tafe.png */,
+				77116F291E968BDE00CB37FD /* gov.png */,
+				77116F2A1E968BDE00CB37FD /* training-winner.jpg */,
+				77116F2B1E968BDE00CB37FD /* logo_TAFESA.png */,
+				77116F2C1E968BDE00CB37FD /* South_Aust.png */,
+			);
+			name = Images;
+			path = "Tafe Buddy";
+			sourceTree = "<group>";
+		};
+		77AAB7011E9B4D1C00B99AFF /* Menu View */ = {
+			isa = PBXGroup;
+			children = (
+				77F293E01E9A3FF200868448 /* Moodle.swift */,
+				77116F211E968BB700CB37FD /* CourseInfo.swift */,
+				77116F221E968BB700CB37FD /* Video.swift */,
+				77D571FE1E9D1F3F0028DF65 /* Settings.swift */,
+				779D00E31EBB319A00A7E64F /* QRScan.swift */,
+				771AA0901EBB71C600AC54F3 /* QRHistory.swift */,
+				8050395F1EDE651B003D3656 /* onedrive.swift */,
+				AEE459791EE006D4006CC01D /* MyAccount.swift */,
+			);
+			name = "Menu View";
+			sourceTree = "<group>";
+		};
+		77AAB7021E9B4D2600B99AFF /* Button View */ = {
+			isa = PBXGroup;
+			children = (
+				7754F7B31E97BECE0091B082 /* CampusMapTableView.swift */,
+				7754F7B11E97B8570091B082 /* Campus Map.swift */,
+				7754F7B51E97C0590091B082 /* CampusDetails.swift */,
+				27163E531EDBD97300E605E4 /* CounsellingSessions.swift */,
+				27163E591EDC2DB900E605E4 /* TimeTable.swift */,
+			);
+			name = "Button View";
+			sourceTree = "<group>";
+		};
+		77F9316B1E9788AF00FE6CB4 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				77116F1F1E968BB700CB37FD /* SignIn.swift */,
+				77116F201E968BB700CB37FD /* MainScreen.swift */,
+				77AAB7031E9B4DD100B99AFF /* PasswordReset.swift */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77116EEC1E968BA100CB37FD /* Tafe Buddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77116F151E968BA100CB37FD /* Build configuration list for PBXNativeTarget "Tafe Buddy" */;
+			buildPhases = (
+				77116EE91E968BA100CB37FD /* Sources */,
+				77116EEA1E968BA100CB37FD /* Frameworks */,
+				77116EEB1E968BA100CB37FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tafe Buddy";
+			productName = "Tafe Buddy";
+			productReference = 77116EED1E968BA100CB37FD /* Tafe Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77116F001E968BA100CB37FD /* Tafe BuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77116F181E968BA100CB37FD /* Build configuration list for PBXNativeTarget "Tafe BuddyTests" */;
+			buildPhases = (
+				77116EFD1E968BA100CB37FD /* Sources */,
+				77116EFE1E968BA100CB37FD /* Frameworks */,
+				77116EFF1E968BA100CB37FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77116F031E968BA100CB37FD /* PBXTargetDependency */,
+			);
+			name = "Tafe BuddyTests";
+			productName = "Tafe BuddyTests";
+			productReference = 77116F011E968BA100CB37FD /* Tafe BuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77116F0B1E968BA100CB37FD /* Tafe BuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77116F1B1E968BA100CB37FD /* Build configuration list for PBXNativeTarget "Tafe BuddyUITests" */;
+			buildPhases = (
+				77116F081E968BA100CB37FD /* Sources */,
+				77116F091E968BA100CB37FD /* Frameworks */,
+				77116F0A1E968BA100CB37FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77116F0E1E968BA100CB37FD /* PBXTargetDependency */,
+			);
+			name = "Tafe BuddyUITests";
+			productName = "Tafe BuddyUITests";
+			productReference = 77116F0C1E968BA100CB37FD /* Tafe BuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77116EE51E968BA100CB37FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ti Chuot";
+				TargetAttributes = {
+					77116EEC1E968BA100CB37FD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UM7WP5D7CA;
+						ProvisioningStyle = Automatic;
+					};
+					77116F001E968BA100CB37FD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77116EEC1E968BA100CB37FD;
+					};
+					77116F0B1E968BA100CB37FD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77116EEC1E968BA100CB37FD;
+					};
+				};
+			};
+			buildConfigurationList = 77116EE81E968BA100CB37FD /* Build configuration list for PBXProject "Tafe Buddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77116EE41E968BA100CB37FD;
+			productRefGroup = 77116EEE1E968BA100CB37FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77116EEC1E968BA100CB37FD /* Tafe Buddy */,
+				77116F001E968BA100CB37FD /* Tafe BuddyTests */,
+				77116F0B1E968BA100CB37FD /* Tafe BuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77116EEB1E968BA100CB37FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77116F361E968BE700CB37FD /* Pop.wav in Resources */,
+				77E5219E1E9D254400D73D47 /* Tafe_Adelaide_Campus.jpg in Resources */,
+				7783EBFF1EC48BC9003F94CA /* ic_build.png in Resources */,
+				77116F351E968BE700CB37FD /* Keyboard.wav in Resources */,
+				77116F311E968BDE00CB37FD /* South_Aust.png in Resources */,
+				77116F301E968BDE00CB37FD /* logo_TAFESA.png in Resources */,
+				7783EC031EC48CD5003F94CA /* qr-code.ico in Resources */,
+				7783EBE31EC47C85003F94CA /* tafelogored.png in Resources */,
+				7783EBF51EC48889003F94CA /* ic_cast_connected.png in Resources */,
+				18F29B4F1ED6C36A00D0BFD8 /* LaunchScreen.storyboard in Resources */,
+				7783EBFD1EC48B50003F94CA /* ic_info.png in Resources */,
+				77116F2F1E968BDE00CB37FD /* training-winner.jpg in Resources */,
+				18F29B501ED6C36A00D0BFD8 /* Main.storyboard in Resources */,
+				7783EBFB1EC48B31003F94CA /* ic_account_box.png in Resources */,
+				7783EBF31EC487F9003F94CA /* ic_map_3x.png in Resources */,
+				77116F2D1E968BDE00CB37FD /* tafe.png in Resources */,
+				77116F2E1E968BDE00CB37FD /* gov.png in Resources */,
+				7783EBF71EC48A75003F94CA /* ic_photo_library.png in Resources */,
+				7783EBE71EC47D4E003F94CA /* ic_menu.png in Resources */,
+				7783EBF91EC48AE6003F94CA /* ic_alarm_add.png in Resources */,
+				27163E581EDBE33900E605E4 /* ic_counselling.gif in Resources */,
+				7783EBEF1EC48770003F94CA /* ic_email_3x.png in Resources */,
+				77F9316A1E97888A00FE6CB4 /* Assets.xcassets in Resources */,
+				77116F371E968BE700CB37FD /* Wave.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77116EFF1E968BA100CB37FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77116F0A1E968BA100CB37FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77116EE91E968BA100CB37FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7754F7B41E97BECE0091B082 /* CampusMapTableView.swift in Sources */,
+				27163E5A1EDC2DB900E605E4 /* TimeTable.swift in Sources */,
+				77116F261E968BB700CB37FD /* CourseInfo.swift in Sources */,
+				77F293E11E9A3FF200868448 /* Moodle.swift in Sources */,
+				77116F251E968BB700CB37FD /* MainScreen.swift in Sources */,
+				805039601EDE651B003D3656 /* onedrive.swift in Sources */,
+				77116EF11E968BA100CB37FD /* AppDelegate.swift in Sources */,
+				771AA0911EBB71C600AC54F3 /* QRHistory.swift in Sources */,
+				77116F241E968BB700CB37FD /* SignIn.swift in Sources */,
+				77AAB7041E9B4DD100B99AFF /* PasswordReset.swift in Sources */,
+				27163E541EDBD97300E605E4 /* CounsellingSessions.swift in Sources */,
+				7754F7B61E97C0590091B082 /* CampusDetails.swift in Sources */,
+				AEE4597A1EE006D4006CC01D /* MyAccount.swift in Sources */,
+				7754F7B21E97B8570091B082 /* Campus Map.swift in Sources */,
+				77D571FF1E9D1F3F0028DF65 /* Settings.swift in Sources */,
+				77116F271E968BB700CB37FD /* Video.swift in Sources */,
+				779D00E41EBB319A00A7E64F /* QRScan.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77116EFD1E968BA100CB37FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77116F061E968BA100CB37FD /* Tafe_BuddyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77116F081E968BA100CB37FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77116F111E968BA100CB37FD /* Tafe_BuddyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77116F031E968BA100CB37FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77116EEC1E968BA100CB37FD /* Tafe Buddy */;
+			targetProxy = 77116F021E968BA100CB37FD /* PBXContainerItemProxy */;
+		};
+		77116F0E1E968BA100CB37FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77116EEC1E968BA100CB37FD /* Tafe Buddy */;
+			targetProxy = 77116F0D1E968BA100CB37FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		77116F131E968BA100CB37FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77116F141E968BA100CB37FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77116F161E968BA100CB37FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UM7WP5D7CA;
+				INFOPLIST_FILE = "Tafe Buddy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hualuong.Tafe-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		77116F171E968BA100CB37FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UM7WP5D7CA;
+				INFOPLIST_FILE = "Tafe Buddy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hualuong.Tafe-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		77116F191E968BA100CB37FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Tafe BuddyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hualuong.Tafe-BuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tafe Buddy.app/Tafe Buddy";
+			};
+			name = Debug;
+		};
+		77116F1A1E968BA100CB37FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Tafe BuddyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hualuong.Tafe-BuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tafe Buddy.app/Tafe Buddy";
+			};
+			name = Release;
+		};
+		77116F1C1E968BA100CB37FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Tafe BuddyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hualuong.Tafe-BuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Tafe Buddy";
+			};
+			name = Debug;
+		};
+		77116F1D1E968BA100CB37FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Tafe BuddyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hualuong.Tafe-BuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Tafe Buddy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77116EE81E968BA100CB37FD /* Build configuration list for PBXProject "Tafe Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77116F131E968BA100CB37FD /* Debug */,
+				77116F141E968BA100CB37FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77116F151E968BA100CB37FD /* Build configuration list for PBXNativeTarget "Tafe Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77116F161E968BA100CB37FD /* Debug */,
+				77116F171E968BA100CB37FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77116F181E968BA100CB37FD /* Build configuration list for PBXNativeTarget "Tafe BuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77116F191E968BA100CB37FD /* Debug */,
+				77116F1A1E968BA100CB37FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77116F1B1E968BA100CB37FD /* Build configuration list for PBXNativeTarget "Tafe BuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77116F1C1E968BA100CB37FD /* Debug */,
+				77116F1D1E968BA100CB37FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77116EE51E968BA100CB37FD /* Project object */;
+}
